@@ -1,0 +1,5 @@
+ALTER INDEX [LastDayPadsSearch_Back]
+ON pads_details
+REBUILD
+WITH (SORT_IN_TEMPDB = ON, MAXDOP = 2, ONLINE = OFF);
+GO
